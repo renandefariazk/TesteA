@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+body{
+    display: block;
+    background-color: black;
+}
+header{
+    position: relative;
+    height: auto;
+}
+footer{
+    height: auto;
+}
+.squad{
+    background-color: white;
+    border:5px solid rgb(0, 217, 255);
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    align-self: center;
+    align-items: center;
+}
+#press{
+    display: block;
+    height: auto;
+    width: auto;
+}
+#pressi{
+    display: block;
+    height: auto;
+    width: auto;
+}
