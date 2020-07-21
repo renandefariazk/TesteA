@@ -15,7 +15,8 @@ footer{
     height: auto;
 }
 .squad{
-    background-color: white;
+    color: white;
+    background-color: black;
     border:5px solid rgb(0, 217, 255);
     display: inline-block;
     width: 120px;
@@ -33,4 +34,16 @@ footer{
     display: block;
     height: auto;
     width: auto;
+}
+#content_tela{
+    margin: 30px;
+    border-radius: 50px;
+    background-color: white;
+}
+#text_inicial{
+    display: inline-block;
+    position: relative;
+    color: white;
+    left: 45%;
+    top: 10px;
 }

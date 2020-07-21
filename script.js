@@ -1,18 +1,24 @@
-window.onload = function(){
-    let h1 = document.getElementsByClassName("squad")
-    let butt = document.getElementById("press")
-    let butto = document.getElementById("pressi")
-    console.log(h1)
-    console.log(butt)
+let h1 = document.getElementsByClassName("squad")
+let butt = document.getElementById("press")
+let butto = document.getElementById("pressi")
+console.log(h1)
+console.log(butt)
     
-    butt.addEventListener("click", vermelho)
-    butto.addEventListener("click", vermelho)
+butt.addEventListener("click", all_cor)
+butto.addEventListener("click", vermelho)
 
-    function vermelho(){
-        console.log(h1)
-        document.body.style.backgroundColor = "red";
-    }
+function vermelho(){
+    console.log(h1)
+    document.body.style.backgroundColor = "red";
 }
+function all_cor(){
+    l1.style.backgroundColor = "red"
+    l2.style.backgroundColor= "blue"
+    l3.style.backgroundColor= "yellow"
+    l4.style.backgroundColor= "green"
+    l5.style.backgroundColor= "purple"
+
+} 
 //    pega esse h1 e colocar no l1 e chamar uma fuction apos o click
 l1 = document.getElementById("primeiro")
 //    r1.onclick = mudarText;
