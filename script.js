@@ -1,6 +1,7 @@
 let h1 = document.getElementsByClassName("squad")
 let butt = document.getElementById("press")
 let butto = document.getElementById("pressi")
+
 console.log(h1)
 console.log(butt)
     
@@ -8,7 +9,10 @@ butt.addEventListener("click", all_cor)
 butto.addEventListener("click", vermelho)
 
 function vermelho(){
-    console.log(h1)
+    //teste para ativa todas essa div 
+    let tes = document.querySelectorAll(['.squad'])
+    console.log('tes query',tes)
+    //modificar essa function
     document.body.style.backgroundColor = "red";
 }
 function all_cor(){

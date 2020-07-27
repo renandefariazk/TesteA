@@ -1,49 +1,154 @@
 *{
     margin: 0;
-    box-sizing: border-box;
     height: 100%;
+}
+:root{
+    --color-principal:cyan;
+}
+::placeholder{
+    color: black;
 }
 body{
     display: block;
     background-color: black;
 }
+/* Header */
 header{
     position: relative;
     height: auto;
-}
-footer{
-    height: auto;
-}
-.squad{
-    color: white;
-    background-color: black;
-    border:5px solid rgb(0, 217, 255);
-    display: inline-block;
-    width: 120px;
-    height: auto;
-    margin: 10px;
-    align-self: center;
+    display: flex;
+    background-color: brown; /*se o browser nao suportar o gradiend*/
+    background-image: linear-gradient(to left,black,cyan);
     align-items: center;
-}
-#press{
-    display: block;
-    height: auto;
-    width: auto;
-}
-#pressi{
-    display: block;
-    height: auto;
-    width: auto;
-}
-#content_tela{
-    margin: 30px;
-    border-radius: 50px;
-    background-color: white;
+    justify-content: space-around;
 }
 #text_inicial{
     display: inline-block;
     position: relative;
     color: white;
-    left: 45%;
-    top: 10px;
 }
+#content_rede{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.social{
+    display: flex;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+}
+/*End of Header */
+/*Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+footer #final{
+    display: flex;
+    flex-direction: row;
+    color: var(--color-principal);
+    justify-content:space-between;
+    width: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*End of Footer*/
+/*Main*/
+body,main{
+    background-color: black;
+    background-image: linear-gradient(to bottom,black,cyan);
+}
+#content_explica{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#content_explica div{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: var(--color-principal);
+    padding: 15px;
+    width: 308px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#content_explica div h1{
+    align-self: center;
+}
+#content_senha{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#content_senha #senha{
+    height:20px;
+}
+#content_senha #senha_button{
+    height: 20px;
+    margin-left: 5px;
+    align-self: flex-end;
+}
+#content_cima{
+    height: auto;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#content_center .squad{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    border:3px solid var(--color-principal);
+    width: 120px;
+    height: 50px;
+}
+#press{
+    display: block;
+    height: 30px;
+    width: 60px;
+    grid-column: 2;
+    align-self: baseline;
+    justify-self: right;
+}
+#pressi{
+    display: block;
+    height: 30px;
+    width: 80px;
+    grid-column: 4;
+}
+#content_senha_cor{
+    display: flex;
+    height: auto;
+    width: auto;
+    border-style: solid;
+    border-color: var(--color-principal);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: black;
+}
+#content_center{
+    height: 40%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2%;
+    grid-row-gap: 20px;
+}
+/*Main end*/
