@@ -34,10 +34,16 @@ header{
 }
 .social{
     display: flex;
-    background-color: blue;
     width: 20px;
+    background-color: white;
     height: 20px;
     justify-content: center;
+}
+#git_nav{
+    background-image: url("./img/githubnavfundo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*End of Header */
 /*Footer */
@@ -80,8 +86,59 @@ body,main{
     width: 308px;
     font-family: 'Courier New', Courier, monospace;
 }
+@keyframes mudarCor{
+    0%{color: white;}
+    50%{color:cyan;}
+    100%{color:darkmagenta;}
+}
+#content_explica h1{
+    animation-name: mudarCor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 #content_explica div h1{
     align-self: center;
+}
+@keyframes codigonumero0{
+    0%{color: white}
+    100%{color: red}
+}
+#content_explica #segredocodigo #codigonumb0{
+    animation-name: codigonumero0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes codigonumero1{
+    0%{color: white}
+    100%{color: yellow}
+}
+#content_explica #segredocodigo #codigonumb1{
+    animation-name: codigonumero1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes codigonumero2{
+    0%{color: white}
+    100%{color: purple}
+}
+#content_explica #segredocodigo #codigonumb2{
+    animation-name: codigonumero2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.content_mostrar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.content_mostrar #senha_mostrar{
+    color: white;
 }
 #content_senha{
     height: auto;
@@ -98,6 +155,13 @@ body,main{
     margin-left: 5px;
     align-self: flex-end;
 }
+#content_color{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
 #content_cima{
     height: auto;
     color: white;
@@ -105,7 +169,7 @@ body,main{
     padding-top: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
-#content_center .squad{
+#content_center .squad{   
     display: flex;
     justify-content: center;
     box-sizing: border-box;
@@ -118,10 +182,10 @@ body,main{
 #press{
     display: block;
     height: 30px;
-    width: 60px;
+    width: 80px;
     grid-column: 2;
     align-self: baseline;
-    justify-self: right;
+    justify-self: end;
 }
 #pressi{
     display: block;
@@ -132,7 +196,7 @@ body,main{
 #content_senha_cor{
     display: flex;
     height: auto;
-    width: auto;
+    width: 60%;
     border-style: solid;
     border-color: var(--color-principal);
     flex-direction: column;
